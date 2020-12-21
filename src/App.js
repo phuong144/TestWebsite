@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Landing from './Landing';
+import Navbar from './Navbar';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Portfolio from './Portfolio';
+import Contact from './Contact';
+import Footer from './Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CssBaseline />  
+      <Navbar />
+      <Landing />
+      <Portfolio />
+      <Contact />
+      <Footer />
     </div>
   );
 }
